@@ -75,7 +75,7 @@ button {
 .site-header__btn {
 	padding: 8px 20px;
 	border-radius: 24px;
-	border: 2px solid #d1d5db;
+	border: 2px solid #000;
 	cursor: pointer;
 	transition: all 0.4s ease;
 }
@@ -104,9 +104,6 @@ button {
 
 /* section 1 */
 
-.blog {
-}
-
 .blog__container {
 	background-image: url(../images/hero/bg.jpg);
 	background-position: center;
@@ -118,10 +115,26 @@ button {
 	padding-bottom: 120px;
 }
 
+.blog__wrapper {
+	max-width: 912px;
+	width: 100%;
+}
+
 .blog__title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	padding-bottom: 20px;
+}
+
+.blog__title2 {
+	display: none;
 }
 
 .blog__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
 }
 
 @media (max-width: 768px) {
@@ -137,10 +150,47 @@ button {
 	.site-header__img-2wrapper {
 		display: block;
 	}
+	/* section 1 */
+
+	.blog__wrapper {
+		max-width: 912px;
+		width: 100%;
+	}
+
+	.blog__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 56px;
+		padding-bottom: 20px;
+	}
+
+	.blog__text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.blog__title {
+		display: none;
+	}
+
+	.blog__title2 {
+		display: block;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 56px;
+	}
 }
 
 @media (max-width: 540px) {
 	.site-header__list {
 		display: none;
+	}
+
+	.blog__title2 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		padding-bottom: 24px;
 	}
 }
